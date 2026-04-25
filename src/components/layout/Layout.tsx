@@ -170,7 +170,7 @@ export default function Layout({ children }: LayoutProps) {
                 <p className="text-[10px] uppercase tracking-[0.3em] text-brand-accent font-bold">High School</p>
               </div>
             </div>
-            <p className="text-white/60 text-base leading-relaxed serif italic">
+            <p className="text-white/60 text-base leading-relaxed">
               "Striving for Quality in Education since 1904. Nurturing diligent leaders through excellence and faith."
             </p>
             <div className="flex gap-4">
@@ -217,7 +217,7 @@ export default function Layout({ children }: LayoutProps) {
 
           <div className="space-y-8">
             <h3 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-accent">Newsletter</h3>
-            <p className="text-base text-white/70 italic serif">Receive updates on events, results, and school news.</p>
+            <p className="text-base text-white/70">Receive updates on events, results, and school news.</p>
             <form className="flex flex-col gap-4">
               <input 
                 type="email" 

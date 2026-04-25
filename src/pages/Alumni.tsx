@@ -40,11 +40,11 @@ export default function Alumni() {
             </FadeIn>
             <FadeIn delay={0.4}>
               <h1 className="text-6xl md:text-8xl font-display font-black leading-[0.8] mb-10 translate-x-[-4px]">
-                 ONCE A <br /> <span className="text-white/40">STUDENT,</span> <br /> ALWAYS <br /> <span className="text-brand-accent italic serif font-light lowercase">family.</span>
+                Once a <br /> <span className="text-white/40">Student,</span> <br /> Always <br /> <span className="text-brand-accent italic font-light">Family.</span>
               </h1>
             </FadeIn>
             <FadeIn delay={0.6}>
-              <p className="text-xl text-white/50 serif italic max-w-lg mb-12 leading-relaxed">
+              <p className="text-xl text-white/50 max-w-lg mb-12 leading-relaxed">
                  Join over 5,000 Mtshabezi alumni worldwide. Connect, collaborate, and give back to the institution that shaped you.
               </p>
             </FadeIn>
@@ -75,7 +75,7 @@ export default function Alumni() {
           <div className="text-center mb-20 max-w-2xl mx-auto">
              <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">Giving Back</h2>
              <h3 className="text-4xl font-display font-bold mb-6 italic serif font-light">Enduring <span className="text-brand-primary font-bold not-italic">Legacy</span> Projects</h3>
-             <p className="text-gray-500 italic serif leading-relaxed">Help us build the future. Your contributions to these ongoing projects will leave a lasting legacy for generations of students.</p>
+             <p className="text-gray-500 leading-relaxed">Help us build the future. Your contributions to these ongoing projects will leave a lasting legacy for generations of students.</p>
           </div>
         </FadeIn>
 
@@ -93,7 +93,7 @@ export default function Alumni() {
                      </div>
                      <div className="p-12 space-y-6">
                         <h4 className="text-2xl font-display font-bold uppercase tracking-tight">{project.title}</h4>
-                        <p className="text-gray-500 text-sm italic serif leading-relaxed">{project.desc}</p>
+                        <p className="text-gray-500 text-sm leading-relaxed">{project.desc}</p>
                         <div className="space-y-3">
                            <div className="flex justify-between text-[10px] font-bold uppercase tracking-widest text-gray-400">
                              <span>Raised: {project.raised}</span>
@@ -127,17 +127,17 @@ export default function Alumni() {
                <div className="p-10 bg-brand-bg space-y-6 border border-gray-100">
                   <Globe className="text-brand-secondary" size={32} />
                   <h4 className="font-display font-bold text-xl uppercase tracking-wider">Global Networking</h4>
-                  <p className="text-sm text-gray-500 italic serif">Access a private directory of Mtshabezi alumni across the globe for professional collaborations.</p>
+                  <p className="text-sm text-gray-500">Access a private directory of Mtshabezi alumni across the globe for professional collaborations.</p>
                </div>
                <div className="p-10 bg-brand-bg space-y-6 border border-gray-100 md:mt-12">
                   <MessageCircle className="text-brand-primary" size={32} />
                   <h4 className="font-display font-bold text-xl uppercase tracking-wider">Mentorship</h4>
-                  <p className="text-sm text-gray-500 italic serif">Guide current students through career talks, university applications, and professional advice.</p>
+                  <p className="text-sm text-gray-500">Guide current students through career talks, university applications, and professional advice.</p>
                </div>
                <div className="p-10 bg-brand-bg space-y-6 border border-gray-100 md:mt-24">
                   <ShieldCheck className="text-brand-accent" size={32} />
                   <h4 className="font-display font-bold text-xl uppercase tracking-wider">Archive Access</h4>
-                  <p className="text-sm text-gray-500 italic serif">Explore digitized archives, old school photos, and magazines dating back many decades.</p>
+                  <p className="text-sm text-gray-500">Explore digitized archives, old school photos, and magazines dating back many decades.</p>
                </div>
             </div>
           </FadeIn>

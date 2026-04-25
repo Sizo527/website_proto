@@ -31,9 +31,9 @@ export default function Admissions() {
         <div className="max-w-7xl mx-auto relative z-10 text-center px-4 w-full">
           <motion.div style={{ opacity: heroOpacity }}>
             <FadeIn>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8">SECURE YOUR <br /> <span className="text-brand-accent italic serif font-light lowercase text-5xl md:text-8xl">future.</span></h1>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8">Secure Your <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Future.</span></h1>
               <div className="h-2 w-24 bg-brand-accent mx-auto mb-10"></div>
-              <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/60 serif italic leading-relaxed">
+              <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/60 leading-relaxed">
                  Join a legacy of excellence. We are now accepting inquiries for the 2026 Academic Year.
               </p>
             </FadeIn>
@@ -52,7 +52,7 @@ export default function Admissions() {
                     National <span className="italic serif font-light text-brand-primary">eMAP</span> Procedure
                   </h3>
                </div>
-               <p className="text-xl text-gray-500 italic serif leading-relaxed mb-10">
+               <p className="text-xl text-gray-500 leading-relaxed mb-10">
                  Mtshabezi High School adheres strictly to the Ministry of Primary and Secondary Education’s electronic application process.
                </p>
             </FadeIn>
@@ -65,7 +65,7 @@ export default function Admissions() {
                      </div>
                      <div>
                         <h4 className="font-bold uppercase tracking-widest text-base mb-2">{step.title}</h4>
-                        <p className="text-sm text-gray-500 italic serif leading-relaxed">{step.desc}</p>
+                        <p className="text-sm text-gray-500 leading-relaxed">{step.desc}</p>
                      </div>
                    </div>
                  </FadeIn>
@@ -99,7 +99,7 @@ export default function Admissions() {
           <FadeIn>
             <div className="text-center max-w-3xl mx-auto">
               <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">A-Level Entry</h2>
-              <h3 className="text-4xl md:text-6xl font-display font-bold mb-10 italic serif leading-tight">Advanced <span className="not-italic font-bold text-brand-primary uppercase">Scholarship</span></h3>
+              <h3 className="text-4xl md:text-6xl font-display font-bold mb-10 italic leading-tight">Advanced <span className="not-italic font-bold text-brand-primary">Scholarship</span></h3>
               <p className="text-xl text-gray-500 font-medium tracking-tight leading-relaxed">Our A-Level center is highly competitive, attracting the brightest minds in Zimbabwe. Entry is based on stringent O-Level achievement.</p>
             </div>
           </FadeIn>
@@ -110,7 +110,7 @@ export default function Admissions() {
                  <GraduationCap className="text-brand-primary mb-12" size={48} />
                  <div>
                     <h4 className="text-3xl font-display font-bold mb-6 uppercase tracking-tighter">Academic Merit</h4>
-                    <p className="text-base text-gray-500 italic serif leading-relaxed mb-10">Candidates for Sciences must possess A-grades in all core science subjects and Mathematics.</p>
+                    <p className="text-base text-gray-500 leading-relaxed mb-10">Candidates for Sciences must possess A-grades in all core science subjects and Mathematics.</p>
                     <div className="text-[10px] uppercase font-bold text-brand-secondary tracking-widest py-6 border-t border-gray-200">Requirement 01</div>
                  </div>
               </div>
@@ -120,7 +120,7 @@ export default function Admissions() {
                  <Users className="text-brand-accent mb-12" size={48} />
                  <div>
                     <h4 className="text-3xl font-display font-bold mb-6 uppercase tracking-tighter">Character & Conduct</h4>
-                    <p className="text-base text-white/50 italic serif leading-relaxed mb-10">A clean conduct record and commitment to BICC values are essential for admission.</p>
+                    <p className="text-base text-white/50 leading-relaxed mb-10">A clean conduct record and commitment to BICC values are essential for admission.</p>
                     <div className="text-[10px] uppercase font-bold text-brand-accent tracking-widest py-6 border-t border-white/10">Requirement 02</div>
                  </div>
               </div>
@@ -130,7 +130,7 @@ export default function Admissions() {
                  <Download className="text-brand-secondary group-hover:text-white mb-12" size={48} />
                  <div>
                     <h4 className="text-3xl font-display font-bold mb-6 uppercase tracking-tighter">Application Form</h4>
-                    <p className="text-base text-gray-500 italic serif leading-relaxed mb-10 group-hover:text-white/70">Download the detailed A-Level subject combination guide and application form.</p>
+                    <p className="text-base text-gray-500 leading-relaxed mb-10 group-hover:text-white/70">Download the detailed A-Level subject combination guide and application form.</p>
                     <button className="flex items-center gap-4 text-[10px] uppercase font-bold text-brand-secondary tracking-widest py-6 border-t border-gray-200 group-hover:text-white group-hover:border-white/20">
                       Download PDF <ArrowRight size={16} />
                     </button>
@@ -153,13 +153,13 @@ export default function Admissions() {
            <FadeIn delay={0.1}>
              <div className="p-10 bg-white border border-gray-100 shadow-sm">
                <h4 className="font-bold text-base uppercase tracking-wider mb-4 text-brand-primary">Can I apply mid-term?</h4>
-               <p className="text-base text-gray-500 italic serif leading-relaxed">Mid-term transfers are only considered in exceptional circumstances and depend on available vacancy in specific classes.</p>
+               <p className="text-base text-gray-500 leading-relaxed">Mid-term transfers are only considered in exceptional circumstances and depend on available vacancy in specific classes.</p>
              </div>
            </FadeIn>
            <FadeIn delay={0.2}>
              <div className="p-10 bg-white border border-gray-100 shadow-sm">
                <h4 className="font-bold text-base uppercase tracking-wider mb-4 text-brand-primary">Are scholarships available?</h4>
-               <p className="text-base text-gray-500 italic serif leading-relaxed">Mtshabezi offers merit-based fee reductions for students demonstrating exceptional academic or sporting talent.</p>
+               <p className="text-base text-gray-500 leading-relaxed">Mtshabezi offers merit-based fee reductions for students demonstrating exceptional academic or sporting talent.</p>
              </div>
            </FadeIn>
         </div>

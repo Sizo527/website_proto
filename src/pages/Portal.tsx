@@ -29,8 +29,8 @@ export default function Portal() {
                 <div className="w-16 h-16 bg-brand-primary flex items-center justify-center text-white mx-auto mb-6 shadow-xl">
                    <Lock size={32} />
                 </div>
-                <h1 className="text-3xl font-display font-black uppercase tracking-tighter mb-2">Secure Portal</h1>
-                <p className="text-sm text-gray-400 italic serif">Welcome back. Please authenticate to continue.</p>
+                <h1 className="text-3xl font-display font-black tracking-tighter mb-2">Secure Portal</h1>
+                <p className="text-sm text-gray-400">Welcome back. Please authenticate to continue.</p>
              </div>
 
              <form className="space-y-6" onSubmit={handleLogin}>
@@ -167,8 +167,8 @@ export default function Portal() {
                     <>
                       <div className="flex flex-col md:flex-row justify-between items-end gap-6">
                         <div>
-                          <h2 className="text-3xl font-display font-black uppercase tracking-tight text-brand-primary">Dashboard Overview</h2>
-                          <p className="text-sm text-gray-400 italic serif">Welcome back, Sipho. Here is your current academic status.</p>
+                          <h2 className="text-3xl font-display font-black tracking-tight text-brand-primary">Dashboard Overview</h2>
+                          <p className="text-sm text-gray-400">Welcome back, Sipho. Here is your current academic status.</p>
                         </div>
                         <span className="text-[10px] font-bold uppercase tracking-widest bg-white border border-gray-100 p-2 text-gray-400 shadow-sm">Term 2, 2026</span>
                       </div>
@@ -245,7 +245,7 @@ export default function Portal() {
                    {activeTab !== "dashboard" && (
                     <div className="min-h-[50vh] flex flex-col items-center justify-center text-center p-20 bg-white border border-gray-100 border-dashed">
                        <h3 className="text-4xl font-display font-bold opacity-10 mb-4">{activeTab.toUpperCase()} MODULE</h3>
-                       <p className="text-gray-300 italic serif">Educational module restricted in preview mode. Please contact administrator for full access.</p>
+                       <p className="text-gray-300">Educational module restricted in preview mode. Please contact administrator for full access.</p>
                     </div>
                    )}
                 </motion.div>

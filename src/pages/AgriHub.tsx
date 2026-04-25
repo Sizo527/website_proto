@@ -82,10 +82,10 @@ export default function AgriHub() {
                 <Sprout size={20} />
                 Agri-Hub Enterprise
               </div>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8 uppercase tracking-tighter">
-                FRESH FROM <br /> <span className="italic serif font-light text-brand-accent">OUR SOIL.</span>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8 tracking-tighter">
+                Fresh From <br /> <span className="italic font-light text-brand-accent">Our Soil.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/70 italic serif max-w-lg mb-10 leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/70 max-w-lg mb-10 leading-relaxed">
                 Supporting student-run innovation and vocational excellence through high-quality poultry and horticulture products.
               </p>
               <div className="flex items-center gap-4 p-2 bg-white/5 border border-white/10 w-fit">
@@ -114,7 +114,7 @@ export default function AgriHub() {
             <FadeIn direction="left" delay={0.4}>
               <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-10 shadow-2xl">
                  <h4 className="font-display font-bold text-2xl mb-4 text-brand-accent uppercase tracking-tighter">Industrialization</h4>
-                 <p className="text-white/60 text-base leading-relaxed italic serif mb-10">
+                 <p className="text-white/60 text-base leading-relaxed mb-10">
                    Part of Zimbabwe's Education 5.0, the Agri-Hub empowers students with practical skills while supplying the Gwanda and Bulawayo regions.
                  </p>
                  <div className="space-y-4 pt-6 border-t border-white/10">
@@ -136,7 +136,7 @@ export default function AgriHub() {
           <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">
             <div>
               <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-4">Availability</h2>
-              <h3 className="text-4xl md:text-6xl font-display font-bold uppercase tracking-tighter">Featured <span className="italic serif font-light text-brand-primary lowercase">produce</span></h3>
+              <h3 className="text-4xl md:text-6xl font-display font-bold tracking-tighter">Featured <span className="italic font-light text-brand-primary">Produce</span></h3>
             </div>
             <div className="flex gap-2">
               <span className="px-6 py-3 bg-brand-primary text-white text-[10px] font-bold uppercase tracking-widest">All Products</span>
@@ -164,7 +164,7 @@ export default function AgriHub() {
                 </div>
                 <div className="space-y-4">
                   <h4 className="text-2xl font-display font-bold uppercase tracking-tight group-hover:text-brand-secondary transition-all">{product.name}</h4>
-                  <p className="text-base text-gray-500 italic serif leading-relaxed line-clamp-2">{product.desc}</p>
+                  <p className="text-base text-gray-500 leading-relaxed line-clamp-2">{product.desc}</p>
                   <div className="flex justify-between items-center py-6 border-t border-gray-100">
                     <div>
                       <span className="text-3xl font-black text-brand-primary">{formatPrice(product.priceUSD)}</span>
@@ -190,7 +190,7 @@ export default function AgriHub() {
                 <div className="text-center mb-16">
                   <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">Bulk Orders</h2>
                   <h3 className="text-4xl md:text-5xl font-display font-bold mb-8 italic serif">Order Inquiry for Gwanda & Bulawayo</h3>
-                  <p className="text-lg text-gray-500 max-w-lg mx-auto italic serif leading-relaxed">Please fill in your details and required quantities. A member of the Mtshabezi Agri-Hub team will contact you to confirm pricing and delivery.</p>
+                  <p className="text-lg text-gray-500 max-w-lg mx-auto leading-relaxed">Please fill in your details and required quantities. A member of the Mtshabezi Agri-Hub team will contact you to confirm pricing and delivery.</p>
                 </div>
 
                 <form className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -213,7 +213,7 @@ export default function AgriHub() {
                   </div>
                   <div className="space-y-3 md:col-span-2">
                     <label className="text-[10px] font-bold uppercase tracking-[0.3em] text-gray-500 px-2 block">Message / Requirements</label>
-                    <textarea rows={5} placeholder="I would like to order 10 crates of eggs and 2 bags of potatoes..." className="w-full bg-brand-bg border-none p-6 focus:ring-2 focus:ring-brand-accent transition-all text-sm italic serif leading-relaxed" />
+                    <textarea rows={5} placeholder="I would like to order 10 crates of eggs and 2 bags of potatoes..." className="w-full bg-brand-bg border-none p-6 focus:ring-2 focus:ring-brand-accent transition-all text-sm leading-relaxed" />
                   </div>
                   <div className="md:col-span-2 pt-6">
                     <button className="w-full bg-brand-primary text-white py-6 font-bold uppercase tracking-[0.4em] text-sm hover:bg-brand-secondary transition-all shadow-xl active:scale-[0.98] border-none">

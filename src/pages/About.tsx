@@ -32,11 +32,11 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto text-center px-4 z-10 w-full">
           <motion.div style={{ opacity: heroOpacity }}>
             <FadeIn>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black uppercase tracking-tighter mb-6">
-                OUR <span className="italic font-light serif text-brand-accent">HERITAGE</span>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black tracking-tighter mb-6">
+                Our <span className="italic font-light text-brand-accent">Heritage</span>
               </h1>
               <div className="h-1.5 bg-brand-accent mx-auto mb-8 w-24"></div>
-              <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/70 serif italic leading-relaxed">
+              <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/70 leading-relaxed">
                 "Built on a foundation of faith, integrity, and unwavering commitment to quality education since 1904."
               </p>
             </FadeIn>
@@ -69,14 +69,14 @@ export default function About() {
                 <div className="p-10 bg-white border border-gray-100 shadow-sm border-t-4 border-t-brand-secondary">
                   <Target className="text-brand-secondary mb-6" size={32} />
                   <h4 className="font-display font-bold text-xl mb-4 uppercase tracking-wider">Mission</h4>
-                  <p className="text-sm text-gray-500 italic serif leading-relaxed">To nurture diligent, physically fit leaders equipped with moral integrity and innovative minds.</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">To nurture diligent, physically fit leaders equipped with moral integrity and innovative minds.</p>
                 </div>
               </FadeIn>
               <FadeIn delay={0.4}>
                 <div className="p-10 bg-brand-primary text-white border-t-4 border-t-brand-accent">
                   <Users className="text-brand-accent mb-6" size={32} />
                   <h4 className="font-display font-bold text-xl mb-4 uppercase tracking-wider">Vision</h4>
-                  <p className="text-sm text-white/60 italic serif leading-relaxed">To be the national standard-bearer for heritage-based education and character development.</p>
+                  <p className="text-sm text-white/60 leading-relaxed">To be the national standard-bearer for heritage-based education and character development.</p>
                 </div>
               </FadeIn>
             </div>
@@ -103,7 +103,7 @@ export default function About() {
             <div className="text-center mb-24 max-w-3xl mx-auto">
                <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">Pedagogical Approach</h2>
                <h3 className="text-4xl md:text-6xl font-display font-bold mb-10 leading-tight">Embracing Heritage-Based <span className="italic serif text-brand-primary font-light">Education 5.0</span></h3>
-               <p className="text-xl text-gray-500 italic serif leading-relaxed">
+               <p className="text-xl text-gray-500 leading-relaxed">
                  In alignment with national pillars, we go beyond traditional teaching to integrate innovation, research, and community industrialization into our daily learning.
                </p>
             </div>
@@ -117,7 +117,7 @@ export default function About() {
                     <val.icon size={28} />
                   </div>
                   <h4 className="text-2xl font-display font-bold mb-4 uppercase tracking-tighter">{val.title}</h4>
-                  <p className="text-base text-gray-500 italic serif leading-relaxed">{val.desc}</p>
+                  <p className="text-base text-gray-500 leading-relaxed">{val.desc}</p>
                 </div>
               </FadeIn>
             ))}
@@ -140,7 +140,7 @@ export default function About() {
             <FadeIn direction="left">
               <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary">Leadership</h2>
               <h3 className="text-4xl md:text-6xl font-display font-bold leading-tight">Guided by <span className="italic serif text-brand-primary font-light">Integrity</span> & Vision.</h3>
-              <p className="text-xl text-gray-600 italic serif leading-relaxed">Our administration and board are committed to maintaining the high standards expected of Mtshabezi. Led by a team of experienced educators and BICC elders, we ensure every decision serves the student's future.</p>
+              <p className="text-xl text-gray-600 leading-relaxed">Our administration and board are committed to maintaining the high standards expected of Mtshabezi. Led by a team of experienced educators and BICC elders, we ensure every decision serves the student's future.</p>
               <button className="px-12 py-5 border border-brand-primary text-brand-primary font-bold uppercase tracking-widest text-sm hover:bg-brand-primary hover:text-white transition-all">
                 Meet the Administration
               </button>

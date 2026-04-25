@@ -42,10 +42,10 @@ export default function StudentLife() {
               <div className="inline-block px-6 py-2 bg-brand-accent text-brand-primary text-[10px] font-bold uppercase tracking-[0.4em] mb-10">
                 Vibrant & Disciplined
               </div>
-              <h1 className="text-5xl md:text-8xl xl:text-9xl font-display font-black leading-[0.8] mb-10 uppercase tracking-tighter">
-                BEYOND THE <br /> <span className="text-brand-accent italic serif font-light lowercase text-5xl md:text-8xl">classroom.</span>
+              <h1 className="text-5xl md:text-8xl xl:text-9xl font-display font-black leading-[0.8] mb-10 tracking-tighter">
+                Beyond the <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Classroom.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/60 serif italic max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/60 max-w-2xl mx-auto leading-relaxed">
                 At Mtshabezi, student life is a vibrant tapestry of culture, sports, and leadership. We foster physical fitness, resilience, and teamwork.
               </p>
             </FadeIn>
@@ -70,10 +70,10 @@ export default function StudentLife() {
                 <Dumbbell size={20} />
                 Premier Facilities
               </div>
-              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight uppercase tracking-tighter">
-                The <span className="italic serif font-light text-brand-primary">Multi-Purpose</span> Pavilion
+              <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight tracking-tighter">
+                The <span className="italic font-light text-brand-primary">Multi-Purpose</span> Pavilion
               </h2>
-              <p className="text-xl text-gray-500 italic serif leading-relaxed">
+              <p className="text-xl text-gray-500 leading-relaxed">
                 Our impressive 800-seat pavilion serves as the heart of school spirit. From exhilarating basketball finals to national choral festivals and graduation ceremonies, this state-of-the-art facility is where memories are made.
               </p>
               <div className="grid grid-cols-2 gap-10 pt-10 border-t border-gray-100">
@@ -97,8 +97,8 @@ export default function StudentLife() {
           <FadeIn>
             <div className="text-center mb-24 max-w-2xl mx-auto">
               <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">Discovery & Growth</h2>
-              <h3 className="text-4xl md:text-6xl font-display font-bold mb-8 uppercase tracking-tighter">Our Diverse <span className="italic serif text-brand-primary font-light">Societies</span></h3>
-              <p className="text-xl text-gray-500 italic serif leading-relaxed">Every student finds their niche. We encourage participation in at least two extracurricular activities to ensure a well-rounded character.</p>
+              <h3 className="text-4xl md:text-6xl font-display font-bold mb-8 tracking-tighter">Our Diverse <span className="italic text-brand-primary font-light">Societies</span></h3>
+              <p className="text-xl text-gray-500 leading-relaxed">Every student finds their niche. We encourage participation in at least two extracurricular activities to ensure a well-rounded character.</p>
             </div>
           </FadeIn>
 
@@ -113,7 +113,7 @@ export default function StudentLife() {
                       <act.icon size={28} />
                     </div>
                     <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-4 uppercase tracking-tight">{act.title}</h4>
-                    <p className="text-white/70 text-base italic serif mb-8 line-clamp-2 max-w-md">{act.desc}</p>
+                    <p className="text-white/70 text-base mb-8 line-clamp-2 max-w-md">{act.desc}</p>
                     <button className="flex items-center gap-3 text-brand-accent font-bold uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
                       View Gallery <ChevronRight size={18} />
                     </button>
@@ -131,8 +131,8 @@ export default function StudentLife() {
           <div className="max-w-7xl mx-auto p-16 md:p-24 bg-brand-secondary text-white flex flex-col lg:flex-row justify-between items-center gap-16 overflow-hidden relative shadow-3xl">
              <div className="absolute left-0 top-0 w-64 h-64 bg-white/5 -translate-x-1/2 -translate-y-1/2 rotate-45"></div>
              <div className="max-w-xl relative z-10 text-center lg:text-left">
-                <h2 className="text-4xl md:text-6xl font-display font-bold mb-8 italic serif leading-tight">National Champion <span className="text-white/40 not-italic font-black uppercase">Choir.</span></h2>
-                <p className="text-xl text-white/70 italic serif leading-relaxed">
+                <h2 className="text-4xl md:text-6xl font-display font-bold mb-8 italic leading-tight">National Champion <span className="text-white/40 not-italic font-black">Choir.</span></h2>
+                <p className="text-xl text-white/70 leading-relaxed">
                   Mtshabezi High School has held the National Choral Championship for three consecutive terms, a testament to our discipline and unwavering talent.
                 </p>
              </div>

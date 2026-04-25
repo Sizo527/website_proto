@@ -52,8 +52,8 @@ export default function Academics() {
           <motion.div style={{ opacity: heroOpacity }} className="max-w-2xl">
             <FadeIn>
               <h2 className="text-brand-accent text-xs uppercase tracking-[0.4em] font-bold mb-6 italic serif">Academic Excellence</h2>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-tight mb-8">PIONEERING <br /> <span className="text-brand-accent italic serif font-light lowercase">knowledge.</span></h1>
-              <p className="text-xl md:text-2xl text-white/70 italic serif leading-relaxed">
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-tight mb-8">Pioneering <br /> <span className="text-brand-accent italic font-light">Knowledge.</span></h1>
+              <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
                 Mtshabezi is renowned for its consistent 100% A-Level pass rate. Our curriculum is designed to challenge, inspire, and equip the next generation of leaders.
               </p>
             </FadeIn>
@@ -110,7 +110,7 @@ export default function Academics() {
                <h3 className="text-4xl md:text-5xl font-display font-bold uppercase tracking-tighter">
                 {departments[activeTab as keyof typeof departments].title}
                </h3>
-               <p className="text-xl text-gray-500 italic serif leading-relaxed">
+               <p className="text-xl text-gray-500 leading-relaxed">
                  {departments[activeTab as keyof typeof departments].desc}
                </p>
                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6">
@@ -148,7 +148,7 @@ export default function Academics() {
                      Inclusive Excellence
                    </div>
                    <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight">Dedicated <span className="italic serif text-brand-accent font-light">Special Needs</span> Department</h2>
-                   <p className="text-xl text-white/70 italic serif leading-relaxed">
+                   <p className="text-xl text-white/70 leading-relaxed">
                      Excellence is inclusive. Our dedicated Special Needs Department ensures our visually impaired students receive exceptional, tailored support and resources to thrive academically and personally.
                    </p>
                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -158,7 +158,7 @@ export default function Academics() {
                          </div>
                          <div>
                             <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2">Braille Resources</h4>
-                            <p className="text-xs text-white/40 italic serif px-2">Full curriculum supports</p>
+                            <p className="text-xs text-white/40 px-2">Full curriculum supports</p>
                          </div>
                       </div>
                       <div className="flex items-center gap-6 p-6 bg-white/5 border border-white/10 group hover:bg-white/10 transition-colors">
@@ -167,7 +167,7 @@ export default function Academics() {
                          </div>
                          <div>
                             <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2">Specialized Exams</h4>
-                            <p className="text-xs text-white/40 italic serif px-2">Tailored proctoring</p>
+                            <p className="text-xs text-white/40 px-2">Tailored proctoring</p>
                          </div>
                       </div>
                    </div>
