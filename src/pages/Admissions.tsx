@@ -31,7 +31,7 @@ export default function Admissions() {
         <div className="max-w-7xl mx-auto relative z-10 text-center px-4 w-full">
           <motion.div style={{ opacity: heroOpacity }}>
             <FadeIn>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8">Secure Your <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Future.</span></h1>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8 text-white">Secure Your <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Future.</span></h1>
               <div className="h-2 w-24 bg-brand-accent mx-auto mb-10"></div>
               <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/60 leading-relaxed">
                  Join a legacy of excellence. We are now accepting inquiries for the 2026 Academic Year.
@@ -119,7 +119,7 @@ export default function Admissions() {
               <div className="p-12 bg-brand-primary text-white shadow-2xl flex flex-col justify-between h-full border border-transparent">
                  <Users className="text-brand-accent mb-12" size={48} />
                  <div>
-                    <h4 className="text-3xl font-display font-bold mb-6 uppercase tracking-tighter">Character & Conduct</h4>
+                    <h4 className="text-3xl font-display font-bold mb-6 uppercase tracking-tighter text-white">Character & Conduct</h4>
                     <p className="text-base text-white/50 leading-relaxed mb-10">A clean conduct record and commitment to BICC values are essential for admission.</p>
                     <div className="text-[10px] uppercase font-bold text-brand-accent tracking-widest py-6 border-t border-white/10">Requirement 02</div>
                  </div>

@@ -52,7 +52,7 @@ export default function Academics() {
           <motion.div style={{ opacity: heroOpacity }} className="max-w-2xl">
             <FadeIn>
               <h2 className="text-brand-accent text-xs uppercase tracking-[0.4em] font-bold mb-6 italic serif">Academic Excellence</h2>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-tight mb-8">Pioneering <br /> <span className="text-brand-accent italic font-light">Knowledge.</span></h1>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-tight mb-8 text-white">Pioneering <br /> <span className="text-brand-accent italic font-light">Knowledge.</span></h1>
               <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
                 Mtshabezi is renowned for its consistent 100% A-Level pass rate. Our curriculum is designed to challenge, inspire, and equip the next generation of leaders.
               </p>
@@ -147,7 +147,7 @@ export default function Academics() {
                    <div className="inline-flex items-center gap-4 px-6 py-2 border border-brand-accent/30 text-brand-accent text-xs font-bold uppercase tracking-widest bg-brand-accent/5">
                      Inclusive Excellence
                    </div>
-                   <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight">Dedicated <span className="italic serif text-brand-accent font-light">Special Needs</span> Department</h2>
+                   <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight text-white">Dedicated <span className="italic serif text-brand-accent font-light">Special Needs</span> Department</h2>
                    <p className="text-xl text-white/70 leading-relaxed">
                      Excellence is inclusive. Our dedicated Special Needs Department ensures our visually impaired students receive exceptional, tailored support and resources to thrive academically and personally.
                    </p>
@@ -157,7 +157,7 @@ export default function Academics() {
                             <Eye size={32} />
                          </div>
                          <div>
-                            <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2">Braille Resources</h4>
+                            <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2 text-white">Braille Resources</h4>
                             <p className="text-xs text-white/40 px-2">Full curriculum supports</p>
                          </div>
                       </div>
@@ -166,7 +166,7 @@ export default function Academics() {
                             <Mic2 size={32} />
                          </div>
                          <div>
-                            <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2">Specialized Exams</h4>
+                            <h4 className="font-bold uppercase tracking-widest text-sm mb-1 px-2 text-white">Specialized Exams</h4>
                             <p className="text-xs text-white/40 px-2">Tailored proctoring</p>
                          </div>
                       </div>

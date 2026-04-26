@@ -82,7 +82,7 @@ export default function AgriHub() {
                 <Sprout size={20} />
                 Agri-Hub Enterprise
               </div>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8 tracking-tighter">
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black leading-none mb-8 tracking-tighter text-white">
                 Fresh From <br /> <span className="italic font-light text-brand-accent">Our Soil.</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/70 max-w-lg mb-10 leading-relaxed">

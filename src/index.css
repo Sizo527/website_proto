@@ -5,11 +5,11 @@
   --font-serif: "Spectral", serif;
   --font-display: "Spectral", serif;
   
-  /* Provided Color Palette */
-  --color-brand-beige: #EEE5D3;
-  --color-brand-blue-light: #C5D1DD;
-  --color-brand-mauve: #DBC5D0;
-  --color-brand-slate: #4C6A93;
+  /* Provided Color Palette - Darkened for WCAG Contrast */
+  --color-brand-beige: #D4C1A0;
+  --color-brand-blue-light: #A5B6C9;
+  --color-brand-mauve: #A48293;
+  --color-brand-slate: #2C3E5B;
   --color-brand-sky: #F4F9FF;
 
   /* Aliases for better semantics */

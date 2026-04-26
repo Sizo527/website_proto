@@ -11,6 +11,8 @@ import Portal from "./pages/Portal";
 import Alumni from "./pages/Alumni";
 import Admissions from "./pages/Admissions";
 
+import ScrollToTop from "./components/ScrollToTop";
+
 const NotFound = () => <div className="py-20 text-center text-4xl font-display font-bold text-red-500">404 - Not Found</div>;
 
 export default function App() {
@@ -18,6 +20,7 @@ export default function App() {
     <>
       {/* <ReactLenis root> */}
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />

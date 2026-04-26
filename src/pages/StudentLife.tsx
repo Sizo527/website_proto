@@ -42,7 +42,7 @@ export default function StudentLife() {
               <div className="inline-block px-6 py-2 bg-brand-accent text-brand-primary text-[10px] font-bold uppercase tracking-[0.4em] mb-10">
                 Vibrant & Disciplined
               </div>
-              <h1 className="text-5xl md:text-8xl xl:text-9xl font-display font-black leading-[0.8] mb-10 tracking-tighter">
+              <h1 className="text-5xl md:text-8xl xl:text-9xl font-display font-black leading-[0.8] mb-10 tracking-tighter text-white">
                 Beyond the <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Classroom.</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/60 max-w-2xl mx-auto leading-relaxed">

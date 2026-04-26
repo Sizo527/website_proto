@@ -191,7 +191,7 @@ export default function Home() {
             <div className="mb-12 inline-block p-4 border border-white/20 bg-white/5 backdrop-blur-md">
               <Landmark className="text-brand-accent w-12 h-12" />
             </div>
-            <h2 className="text-4xl md:text-6xl font-display font-bold mb-10 leading-tight">A <span className="italic serif font-light text-brand-accent">Legacy</span> of Academic Distinction Since 1904.</h2>
+            <h2 className="text-4xl md:text-6xl font-display font-bold mb-10 leading-tight text-white">A <span className="italic serif font-light text-brand-accent">Legacy</span> of Academic Distinction Since 1904.</h2>
             <p className="text-xl md:text-2xl text-white/60 mb-12">
               "Driven by our Christian values, we are committed to nurturing the next generation of resilient, innovative leaders in Matabeleland South and beyond."
             </p>

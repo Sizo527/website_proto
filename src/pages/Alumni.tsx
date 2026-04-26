@@ -39,7 +39,7 @@ export default function Alumni() {
               <span className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6 block">Bezha Global Network</span>
             </FadeIn>
             <FadeIn delay={0.4}>
-              <h1 className="text-6xl md:text-8xl font-display font-black leading-[0.8] mb-10 translate-x-[-4px]">
+              <h1 className="text-6xl md:text-8xl font-display font-black leading-[0.8] mb-10 translate-x-[-4px] text-white">
                 Once a <br /> <span className="text-white/40">Student,</span> <br /> Always <br /> <span className="text-brand-accent italic font-light">Family.</span>
               </h1>
             </FadeIn>

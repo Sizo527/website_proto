@@ -32,7 +32,7 @@ export default function About() {
         <div className="relative max-w-7xl mx-auto text-center px-4 z-10 w-full">
           <motion.div style={{ opacity: heroOpacity }}>
             <FadeIn>
-              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black tracking-tighter mb-6">
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-display font-black tracking-tighter mb-6 text-white">
                 Our <span className="italic font-light text-brand-accent">Heritage</span>
               </h1>
               <div className="h-1.5 bg-brand-accent mx-auto mb-8 w-24"></div>
