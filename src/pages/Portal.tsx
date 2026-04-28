@@ -151,7 +151,7 @@ export default function Portal() {
                       <p className="text-[10px] uppercase font-bold text-gray-400 tracking-widest mt-1">Class of 2026</p>
                    </div>
                    <div className="w-12 h-12 bg-brand-accent/20 border border-brand-accent/10 p-1">
-                      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" className="w-full h-full object-cover" />
+                      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200" alt="Sipho J. Moyo - Student Profile" className="w-full h-full object-cover" loading="lazy" />
                    </div>
                 </div>
              </div>

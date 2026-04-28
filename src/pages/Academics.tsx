@@ -133,7 +133,9 @@ export default function Academics() {
             <div className="overflow-hidden aspect-[4/3] shadow-2xl border-8 border-white">
               <img 
                 src={departments[activeTab as keyof typeof departments].image} 
+                alt={`${departments[activeTab as keyof typeof departments].title} facilities and subjects at Mtshabezi High School`}
                 className="w-full h-full object-cover" 
+                loading="lazy"
               />
             </div>
           </motion.div>
@@ -176,7 +178,12 @@ export default function Academics() {
                    </div>
                 </div>
                 <div className="aspect-[4/3] overflow-hidden shadow-2xl border-8 border-white/20">
-                   <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800" className="w-full h-full object-cover" />
+                   <img 
+                     src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800" 
+                     alt="Students and staff working with modern technology in the Mtshabezi Innovation Centre" 
+                     className="w-full h-full object-cover" 
+                     loading="lazy"
+                   />
                 </div>
              </div>
           </div>

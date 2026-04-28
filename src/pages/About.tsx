@@ -111,7 +111,9 @@ export default function About() {
                  <motion.img
                    style={{ y: missionImgY }}
                    src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000"
+                   alt="Mtshabezi High School campus main entrance"
                    className="absolute inset-0 w-full h-[120%] object-cover"
+                   loading="lazy"
                  />
                </div>
                <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-brand-accent/20 blur-3xl z-0"></div>
@@ -215,8 +217,18 @@ export default function About() {
           <div className="order-2 lg:order-1">
             <FadeIn direction="right">
               <div className="grid grid-cols-2 gap-6">
-                <img src="https://images.unsplash.com/photo-1491845339675-bc02adfc1e2b?auto=format&fit=crop&q=80&w=600" className="shadow-2xl mt-12 border-4 border-white" />
-                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c476?auto=format&fit=crop&q=80&w=600" className="shadow-2xl border-4 border-white" />
+                <img 
+                  src="https://images.unsplash.com/photo-1491845339675-bc02adfc1e2b?auto=format&fit=crop&q=80&w=600" 
+                  alt="Student dormitory facilities at Mtshabezi High School" 
+                  className="shadow-2xl mt-12 border-4 border-white" 
+                  loading="lazy"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1523050854058-8df90110c476?auto=format&fit=crop&q=80&w=600" 
+                  alt="Students engaged in campus boarding activities" 
+                  className="shadow-2xl border-4 border-white" 
+                  loading="lazy"
+                />
               </div>
             </FadeIn>
           </div>
@@ -241,8 +253,18 @@ export default function About() {
           <div className="order-2 md:order-1 relative">
             <FadeIn direction="right">
               <div className="grid grid-cols-2 gap-6">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" className="shadow-2xl mt-12 border-4 border-white" />
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600" className="shadow-2xl border-4 border-white" />
+                <img 
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" 
+                  alt="A male member of the Mtshabezi High School leadership team" 
+                  className="shadow-2xl mt-12 border-4 border-white" 
+                  loading="lazy"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=600" 
+                  alt="A female member of the Mtshabezi High School leadership team" 
+                  className="shadow-2xl border-4 border-white" 
+                  loading="lazy"
+                />
               </div>
             </FadeIn>
           </div>

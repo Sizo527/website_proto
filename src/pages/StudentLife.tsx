@@ -63,7 +63,12 @@ export default function StudentLife() {
           <div className="order-2 lg:order-1 relative">
              <FadeIn direction="right">
                <div className="aspect-video overflow-hidden shadow-2xl relative z-10 border-8 border-white">
-                  <img src="https://images.unsplash.com/photo-1519750783826-51dbde47c1b4?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1519750783826-51dbde47c1b4?auto=format&fit=crop&q=80&w=1200" 
+                    alt="The 800-seat multi-purpose pavilion at Mtshabezi High School, used for sports and ceremonies" 
+                    className="w-full h-full object-cover" 
+                    loading="lazy"
+                  />
                </div>
                <div className="absolute -bottom-10 -right-10 w-full h-full bg-brand-accent/5 z-0"></div>
              </FadeIn>
@@ -110,7 +115,12 @@ export default function StudentLife() {
             {activities.map((act, idx) => (
               <FadeIn key={act.title} delay={idx * 0.1}>
                 <div className="group relative h-[500px] overflow-hidden shadow-2xl border-4 border-white shadow-brand-primary/5">
-                  <img src={act.image} className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
+                  <img 
+                    src={act.image} 
+                    alt={`${act.title}: ${act.desc}`}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/60 to-transparent"></div>
                   <div className="absolute bottom-0 left-0 p-12 w-full translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                     <div className="w-16 h-16 bg-white flex items-center justify-center text-brand-primary mb-8 group-hover:bg-brand-accent transition-all duration-500">

@@ -87,7 +87,7 @@ export default function Admissions() {
           <div className="relative">
              <FadeIn direction="left">
                <div className="aspect-[4/5] overflow-hidden shadow-2xl border-8 border-white">
-                  <img src="https://images.unsplash.com/photo-1491845339675-bc02adfc1e2b?auto=format&fit=crop&q=80&w=1000" className="w-full h-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1491845339675-bc02adfc1e2b?auto=format&fit=crop&q=80&w=1000" alt="Mtshabezi High School campus and student activity areas" className="w-full h-full object-cover" loading="lazy" />
                </div>
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-brand-primary/5 rounded-full blur-[100px] z-[-1]"></div>
              </FadeIn>
@@ -139,6 +139,45 @@ export default function Admissions() {
                  </div>
               </div>
             </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Important Documents */}
+      <section className="py-32 px-4 bg-brand-bg border-b border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <FadeIn>
+            <div className="flex flex-col md:flex-row justify-between items-end gap-10 mb-20">
+              <div className="max-w-2xl">
+                <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-4">Resources</h2>
+                <h3 className="text-4xl md:text-5xl font-display font-bold tracking-tighter">Important <span className="italic font-light text-brand-primary">Documents.</span></h3>
+              </div>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { name: "School Prospectus", file: "Prospectus.pdf", desc: "A comprehensive guide to Mtshabezi's heritage, vision, and campus life." },
+              { name: "Admission Form", file: "AdmissionForm.pdf", desc: "Standard application form for non-eMAP assessment and direct entries." },
+              { name: "Fees Structure", file: "Fees.pdf", desc: "Detailed breakdown of boarding, tuition, and administrative levies for 2026." },
+            ].map((doc, idx) => (
+              <FadeIn key={doc.name} delay={idx * 0.1}>
+                <div className="bg-white p-10 shadow-sm border border-gray-100 group hover:border-brand-accent transition-all h-full flex flex-col">
+                  <div className="w-14 h-14 bg-brand-bg text-brand-primary flex items-center justify-center mb-8 group-hover:bg-brand-primary group-hover:text-white transition-all">
+                    <Download size={24} />
+                  </div>
+                  <h4 className="text-xl font-display font-bold mb-4 uppercase tracking-tight">{doc.name}</h4>
+                  <p className="text-sm text-gray-500 mb-8 flex-grow">{doc.desc}</p>
+                  <a 
+                    href={`${import.meta.env.BASE_URL}docs/${doc.file}`} 
+                    download
+                    className="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-secondary hover:text-brand-primary transition-colors"
+                  >
+                    Download PDF <ArrowRight size={14} />
+                  </a>
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>

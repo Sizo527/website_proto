@@ -26,7 +26,11 @@ export default function Alumni() {
           style={{ y: heroY }}
           className="absolute inset-0 bg-[#050505] flex items-center justify-center opacity-40 grayscale pointer-events-none"
         >
-          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2000" className="w-full h-full object-cover" />
+          <img 
+            src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2000" 
+            alt="Mtshabezi High School alumni gathering and celebrating their shared heritage" 
+            className="w-full h-full object-cover" 
+          />
         </motion.div>
         
         <div className="absolute top-0 right-0 w-1/2 h-full bg-brand-secondary/10 blur-[120px]"></div>
@@ -56,7 +60,12 @@ export default function Alumni() {
           <div className="relative hidden lg:block">
              <FadeIn delay={0.8} direction="left">
                <div className="aspect-square overflow-hidden border border-white/10 p-4 bg-white/5 backdrop-blur-md">
-                  <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=1000" className="w-full h-full object-cover" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=1000" 
+                    alt="Mtshabezi High School alumni network connections worldwide" 
+                    className="w-full h-full object-cover" 
+                    loading="lazy"
+                  />
                </div>
                <div className="absolute -bottom-10 -left-10 p-10 bg-brand-accent shadow-2xl text-brand-primary">
                   <div className="text-3xl font-display font-black">5000+</div>

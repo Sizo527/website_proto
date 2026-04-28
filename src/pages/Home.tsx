@@ -169,6 +169,8 @@ export default function Home() {
               style={{ y: aboutImgY }}
               src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000"
               className="absolute inset-0 w-full h-[120%] object-cover"
+              alt="Mtshabezi High School campus main entrance and administration building"
+              loading="lazy"
             />
           </div>
 
@@ -247,7 +249,12 @@ export default function Home() {
               <FadeIn key={member.name} delay={idx * 0.1}>
                 <div className="group cursor-default">
                   <div className="aspect-[3/4] overflow-hidden shadow-lg mb-6 relative">
-                    <img src={member.img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img 
+                      src={member.img} 
+                      alt={`${member.name}, ${member.role} at Mtshabezi High School`}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                      loading="lazy"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <h4 className="font-display font-bold text-lg mb-1">{member.name}</h4>
@@ -362,7 +369,12 @@ export default function Home() {
             {galleryImages.map((src, idx) => (
               <FadeIn key={idx} delay={idx * 0.05}>
                 <Link to="/gallery" className="relative aspect-square overflow-hidden group">
-                  <img src={src} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <img 
+                    src={src} 
+                    alt="Mtshabezi High School campus life and student activities" 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                    loading="lazy"
+                  />
                   <div className="absolute inset-0 bg-brand-primary/0 group-hover:bg-brand-primary/30 transition-colors" />
                 </Link>
               </FadeIn>
@@ -406,7 +418,9 @@ function ParallaxImage({ src }: { src: string }) {
       <motion.img
         style={{ y }}
         src={src}
+        alt="Mtshabezi High School educational features and facilities"
         className="absolute inset-0 w-full h-[120%] object-cover transition-transform duration-700 group-hover:scale-110"
+        loading="lazy"
       />
     </div>
   );

@@ -104,7 +104,12 @@ export default function Staff() {
         <FadeIn key={member.name + idx} delay={Math.min(idx * 0.05, 0.4)}>
           <div className="group cursor-default bg-white border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow">
             <div className="aspect-[4/5] overflow-hidden relative">
-              <img src={member.img} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img 
+                src={member.img} 
+                alt={`${member.name}, ${member.role} at Mtshabezi High School`} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <div className="p-6">

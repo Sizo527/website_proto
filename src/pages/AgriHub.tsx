@@ -148,6 +148,7 @@ export default function AgriHub() {
                     src={product.image} 
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
                     alt={product.name}
+                    loading="lazy"
                   />
                   <div className="absolute top-6 right-6">
                     <span className="bg-white/90 backdrop-blur-md px-4 py-2 text-[10px] font-bold uppercase tracking-widest text-brand-primary border border-white/20">
