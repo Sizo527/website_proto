@@ -1,6 +1,5 @@
 
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { ReactLenis } from "@studio-freight/react-lenis";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,6 +9,8 @@ import StudentLife from "./pages/StudentLife";
 import Portal from "./pages/Portal";
 import Alumni from "./pages/Alumni";
 import Admissions from "./pages/Admissions";
+import Staff from "./pages/Staff";
+import Gallery from "./pages/Gallery";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -18,7 +19,6 @@ const NotFound = () => <div className="py-20 text-center text-4xl font-display f
 export default function App() {
   return (
     <>
-      {/* <ReactLenis root> */}
       <BrowserRouter>
         <ScrollToTop />
         <Layout>
@@ -31,11 +31,12 @@ export default function App() {
             <Route path="/portal" element={<Portal />} />
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/admissions" element={<Admissions />} />
+            <Route path="/staff" element={<Staff />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
       </BrowserRouter>
-      {/* </ReactLenis> */}
     </>
   );
 }

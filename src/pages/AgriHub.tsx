@@ -45,15 +45,6 @@ export default function AgriHub() {
       category: "Poultry",
       image: "https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&q=80&w=600"
     },
-    { 
-      id: 4, 
-      name: "Premium Potatoes", 
-      desc: "Large Irish potatoes, perfect for mashing or frying. Fresh from the soil.", 
-      priceUSD: 12.00, 
-      unit: "10kg Bag", 
-      category: "Horticulture",
-      image: "https://images.unsplash.com/photo-1518977676601-b53f02bad675?auto=format&fit=crop&q=80&w=600"
-    },
   ];
 
   const formatPrice = (priceUSD: number) => {

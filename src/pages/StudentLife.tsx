@@ -2,7 +2,9 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { Trophy, Music, Speech, Users, Dumbbell, Star, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import FadeIn from "../components/layout/FadeIn";
+import AnimatedCounter from "../components/AnimatedCounter";
 
 export default function StudentLife() {
   const heroRef = useRef(null);
@@ -15,10 +17,10 @@ export default function StudentLife() {
   const heroOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
 
   const activities = [
-    { title: "Champion Choir", desc: "Our internationally recognized choir consistently takes gold in national choral competitions.", icon: Music, image: "https://images.unsplash.com/photo-1540609651531-16893698064a?auto=format&fit=crop&q=80&w=800" },
-    { title: "Debate & Quiz", desc: "Cultivating sharp minds and public speaking excellence through vibrant debate societies.", icon: Speech, image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" },
-    { title: "Sporting Glory", desc: "Competitive Basketball, Netball, and Athletics with top-tier provincial training.", icon: Trophy, image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=800" },
-    { title: "Leadership Club", desc: "Nurturing tomorrow's ethical leaders through community service and team building.", icon: Users, image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800" },
+    { title: "Champion Choir", desc: "Our nationally celebrated choir has earned gold medals at the National Schools Music Festival, a testament to the discipline and talent nurtured at Mtshabezi.", icon: Music, image: "https://images.unsplash.com/photo-1540609651531-16893698064a?auto=format&fit=crop&q=80&w=800" },
+    { title: "Debate & Quiz", desc: "Through vibrant quiz competitions and debate societies, students develop critical thinking, eloquence, and the confidence to articulate their ideas on any stage.", icon: Speech, image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" },
+    { title: "Sporting Glory", desc: "Basketball, netball, volleyball, soccer, and athletics — our athletes compete at provincial and national level, training on our elite multi-purpose pavilion.", icon: Trophy, image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=800" },
+    { title: "Leadership & Service", desc: "Our prefects board and leadership clubs cultivate ethical leaders through community service projects, team-building exercises, and peer mentorship.", icon: Users, image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=800" },
   ];
 
   return (
@@ -46,7 +48,7 @@ export default function StudentLife() {
                 Beyond the <br /> <span className="text-brand-accent italic font-light text-5xl md:text-8xl">Classroom.</span>
               </h1>
               <p className="text-xl md:text-2xl text-white/60 max-w-2xl mx-auto leading-relaxed">
-                At Mtshabezi, student life is a vibrant tapestry of culture, sports, and leadership. We foster physical fitness, resilience, and teamwork.
+                At Mtshabezi, student life is a vibrant tapestry of culture, sports, and leadership. We foster physical fitness, resilience, and teamwork beyond the academic environment.
               </p>
             </FadeIn>
           </motion.div>
@@ -74,12 +76,12 @@ export default function StudentLife() {
                 The <span className="italic font-light text-brand-primary">Multi-Purpose</span> Pavilion
               </h2>
               <p className="text-xl text-gray-500 leading-relaxed">
-                Our impressive 800-seat pavilion serves as the heart of school spirit. From exhilarating basketball finals to national choral festivals and graduation ceremonies, this state-of-the-art facility is where memories are made.
+                Our impressive multi-purpose pavilion serves as the heart of school spirit. From exhilarating basketball finals and volleyball tournaments to national choral festivals and graduation ceremonies, this state-of-the-art facility is where lasting memories are forged.
               </p>
               <div className="grid grid-cols-2 gap-10 pt-10 border-t border-gray-100">
                  <div className="space-y-2">
-                    <span className="text-5xl font-display font-black text-brand-primary">800</span>
-                    <span className="text-[10px] uppercase tracking-widest text-gray-400 block font-bold">Capacity</span>
+                    <span className="text-5xl font-display font-black text-brand-primary"><AnimatedCounter value="800+" duration={2.5} /></span>
+                    <span className="text-[10px] uppercase tracking-widest text-gray-400 block font-bold">Seating Capacity</span>
                  </div>
                  <div className="space-y-2">
                     <span className="text-5xl font-display font-black text-brand-primary">Elite</span>
@@ -114,9 +116,9 @@ export default function StudentLife() {
                     </div>
                     <h4 className="text-3xl md:text-4xl font-display font-bold text-white mb-4 uppercase tracking-tight">{act.title}</h4>
                     <p className="text-white/70 text-base mb-8 line-clamp-2 max-w-md">{act.desc}</p>
-                    <button className="flex items-center gap-3 text-brand-accent font-bold uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
+                    <Link to="/gallery" className="flex items-center gap-3 text-brand-accent font-bold uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
                       View Gallery <ChevronRight size={18} />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </FadeIn>
@@ -133,7 +135,7 @@ export default function StudentLife() {
              <div className="max-w-xl relative z-10 text-center lg:text-left">
                 <h2 className="text-4xl md:text-6xl font-display font-bold mb-8 italic leading-tight">National Champion <span className="text-white/40 not-italic font-black">Choir.</span></h2>
                 <p className="text-xl text-white/70 leading-relaxed">
-                  Mtshabezi High School has held the National Choral Championship for three consecutive terms, a testament to our discipline and unwavering talent.
+                  The Mtshabezi High School choir has consistently achieved top honours at the National Schools Music Festival, showcasing the depth of artistic talent and discipline cultivated within our community.
                 </p>
              </div>
              <div className="relative z-10 flex gap-6">

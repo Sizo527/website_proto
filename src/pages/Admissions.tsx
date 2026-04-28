@@ -53,7 +53,7 @@ export default function Admissions() {
                   </h3>
                </div>
                <p className="text-xl text-gray-500 leading-relaxed mb-10">
-                 Mtshabezi High School adheres strictly to the Ministry of Primary and Secondary Education’s electronic application process.
+                 Mtshabezi High School adheres strictly to the Ministry of Primary and Secondary Education's electronic application process.
                </p>
             </FadeIn>
             <div className="space-y-8">
@@ -154,12 +154,6 @@ export default function Admissions() {
              <div className="p-10 bg-white border border-gray-100 shadow-sm">
                <h4 className="font-bold text-base uppercase tracking-wider mb-4 text-brand-primary">Can I apply mid-term?</h4>
                <p className="text-base text-gray-500 leading-relaxed">Mid-term transfers are only considered in exceptional circumstances and depend on available vacancy in specific classes.</p>
-             </div>
-           </FadeIn>
-           <FadeIn delay={0.2}>
-             <div className="p-10 bg-white border border-gray-100 shadow-sm">
-               <h4 className="font-bold text-base uppercase tracking-wider mb-4 text-brand-primary">Are scholarships available?</h4>
-               <p className="text-base text-gray-500 leading-relaxed">Mtshabezi offers merit-based fee reductions for students demonstrating exceptional academic or sporting talent.</p>
              </div>
            </FadeIn>
         </div>
