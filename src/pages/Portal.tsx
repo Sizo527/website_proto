@@ -2,6 +2,7 @@
 import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Lock, User, Eye, EyeOff, LayoutDashboard, FileText, PieChart, Settings, LogOut, Bell, Search, GraduationCap, ArrowRight } from "lucide-react";
+import SEO from "../components/SEO";
 
 export default function Portal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -16,6 +17,7 @@ export default function Portal() {
   if (!isLoggedIn) {
      return (
        <div className="min-h-[80vh] flex items-center justify-center p-4 bg-brand-bg relative overflow-hidden">
+          <SEO title="Student Portal — Mtshabezi High School" description="Access student results, fee statements, and school notices. Mtshabezi High School parent and student portal." />
           {/* Abstract Backdrops */}
           <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-primary/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[50vw] h-[50vw] bg-brand-secondary/5 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2"></div>

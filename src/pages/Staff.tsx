@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import FadeIn from "../components/layout/FadeIn";
+import SEO from "../components/SEO";
 
 interface StaffMember {
   name: string;
@@ -118,6 +119,7 @@ export default function Staff() {
 
   return (
     <div className="bg-brand-bg overflow-hidden">
+      <SEO title="Meet the Staff — Mtshabezi High School" description="Leadership and teaching staff at Mtshabezi High School. Experienced educators committed to academic excellence in Gwanda, Zimbabwe." />
       {/* Hero */}
       <section ref={heroRef} className="relative h-[60vh] flex items-center justify-center bg-brand-primary text-white overflow-hidden">
         <motion.div

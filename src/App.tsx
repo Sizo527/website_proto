@@ -19,7 +19,7 @@ const NotFound = () => <div className="py-20 text-center text-4xl font-display f
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <Layout>
           <Routes>

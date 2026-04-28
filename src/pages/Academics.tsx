@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import { Beaker, BookOpen, Calculator, Palette, Library, Star } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
 import FadeIn from "../components/layout/FadeIn";
+import SEO from "../components/SEO";
 
 export default function Academics() {
   const heroRef = useRef(null);
@@ -43,6 +44,7 @@ export default function Academics() {
 
   return (
     <div className="bg-brand-bg overflow-hidden">
+      <SEO title="Academic Programs — Mtshabezi High School" description="ZIMSEC O-Level and A-Level curriculum in Sciences, Commercials & Arts. 100% A-Level pass rate, 97% O-Level pass rate. Powered by Heritage-Based Education 5.0." />
       {/* Hero Header with Parallax */}
       <section ref={heroRef} className="bg-brand-primary h-[70vh] text-white flex items-center relative overflow-hidden">
         <motion.div 

@@ -5,6 +5,7 @@ import { Trophy, Music, Speech, Users, Dumbbell, Star, ChevronRight } from "luci
 import { Link } from "react-router-dom";
 import FadeIn from "../components/layout/FadeIn";
 import AnimatedCounter from "../components/AnimatedCounter";
+import SEO from "../components/SEO";
 
 export default function StudentLife() {
   const heroRef = useRef(null);
@@ -25,6 +26,7 @@ export default function StudentLife() {
 
   return (
     <div className="bg-brand-bg overflow-hidden">
+      <SEO title="Student Life — Mtshabezi High School" description="National choir champions, competitive athletics, debate societies, and leadership programs. Discover life beyond the classroom at Mtshabezi High School." />
       {/* Dynamic Header with Parallax */}
       <section ref={heroRef} className="relative h-[70vh] flex items-center justify-center bg-brand-primary text-white text-center overflow-hidden">
         <motion.div 

@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Download, FileText, CheckCircle, Info, ExternalLink, GraduationCap, Users, Globe, ArrowRight } from "lucide-react";
 import { useRef } from "react";
 import FadeIn from "../components/layout/FadeIn";
+import SEO from "../components/SEO";
 
 export default function Admissions() {
   const heroRef = useRef(null);
@@ -22,6 +23,7 @@ export default function Admissions() {
 
   return (
     <div className="bg-brand-bg overflow-hidden text-brand-primary">
+      <SEO title="Admissions Guide — Mtshabezi High School" description="Form 1 admissions via eMAP, A-Level direct applications. Requirements, fees, and how to apply to Mtshabezi High School in Gwanda." />
       {/* Banner Header with Parallax */}
       <section ref={heroRef} className="bg-brand-primary h-[60vh] text-white flex items-center relative overflow-hidden">
         <motion.div 

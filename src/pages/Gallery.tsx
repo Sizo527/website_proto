@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from "motion/react";
 import { useRef, useState } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import FadeIn from "../components/layout/FadeIn";
+import SEO from "../components/SEO";
 
 interface GalleryImage {
   src: string;
@@ -52,6 +53,7 @@ export default function Gallery() {
 
   return (
     <div className="bg-brand-bg overflow-hidden">
+      <SEO title="Campus Gallery — Mtshabezi High School" description="Photos of campus life, sports, cultural events, and facilities at Mtshabezi High School, Gwanda, Zimbabwe." />
       {/* Hero */}
       <section ref={heroRef} className="relative h-[60vh] flex items-center justify-center bg-brand-primary text-white overflow-hidden">
         <motion.div

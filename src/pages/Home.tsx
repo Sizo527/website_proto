@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useRef } from "react";
 import FadeIn from "../components/layout/FadeIn";
 import AnimatedCounter from "../components/AnimatedCounter";
+import SEO from "../components/SEO";
 
 export default function Home() {
   const heroRef = useRef(null);
@@ -25,7 +26,7 @@ export default function Home() {
   const stats = [
     { label: "O-Level Pass Rate", value: "97%", icon: Trophy, color: "bg-brand-accent" },
     { label: "A-Level Pass Rate", value: "100%", icon: GraduationCap, color: "bg-brand-secondary" },
-    { label: "Pavilion Capacity", value: "800+", icon: Users, color: "bg-brand-blue-light" },
+    { label: "Years of Excellence", value: "120+", icon: Users, color: "bg-brand-blue-light" },
   ];
 
   const features = [
@@ -39,7 +40,7 @@ export default function Home() {
     },
     {
       title: "Student Life",
-      desc: "800-seat pavilion, national choir champions, basketball, netball, soccer & athletics.",
+      desc: "National choir champions, basketball, netball, soccer, athletics & vibrant cultural societies.",
       img: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&q=80&w=1000",
       icon: Trophy,
       link: "/student-life",
@@ -85,6 +86,7 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
+      <SEO title="Mtshabezi High School — Where Excellence Meets Heritage" description="Mtshabezi High School is a renowned boarding institution in Gwanda, proudly operated under the Brethren in Christ Church. Located in Matabeleland South. 97% O-Level pass rate, 100% A-Level pass rate." />
       {/* ===== SECTION 1: HERO ===== */}
       <section ref={heroRef} className="relative h-screen flex items-center overflow-hidden bg-brand-primary">
         <motion.div
@@ -114,7 +116,7 @@ export default function Home() {
 
             <FadeIn delay={0.6}>
               <p className="text-xl md:text-2xl text-white/70 mb-10 max-w-lg leading-relaxed">
-                A Brethren in Christ Church boarding school in Gwanda, shaping tomorrow's leaders through discipline and innovation since 1904.
+                A Brethren in Christ Church boarding school in Gwanda, shaping tomorrow's leaders through discipline and innovation since 1906.
               </p>
             </FadeIn>
 
@@ -173,17 +175,17 @@ export default function Home() {
           <div className="space-y-8">
             <FadeIn>
               <div className="inline-block px-4 py-2 border border-brand-secondary text-xs uppercase tracking-[0.3em] font-bold text-brand-secondary mb-2">
-                Established 1904
+                Established 1906
               </div>
               <h2 className="text-4xl md:text-5xl font-display font-bold leading-tight mb-6">
                 A Beacon of <span className="italic serif font-light text-brand-secondary">Academic Excellence</span> in Matabeleland South.
               </h2>
               <div className="space-y-5 text-gray-600 leading-relaxed text-lg">
                 <p>
-                  Nestled in the heart of Gwanda, Mtshabezi High School is proudly operated under the Brethren in Christ Church. For over a century, the school has earned its reputation as one of Zimbabwe's most distinguished academic institutions.
+                  Founded in 1906 by Rev. Harvey J. Frey along the Mtshabezi River, Mtshabezi High School is proudly operated under the Brethren in Christ Church. For over a century, the school has earned its reputation as one of Zimbabwe's most distinguished academic institutions.
                 </p>
                 <p>
-                  The school sits within a broader Mission campus that includes a hospital, a primary school, and a Bible school — a community rooted in faith, service, and education. Through the Heritage-Based Education 5.0 model, Mtshabezi prepares students not just for examinations, but for life — blending academic rigour with entrepreneurship, innovation, and real-world skills.
+                  The school sits within a broader Mission campus that includes a hospital (est. 1951), a primary school, and the Ekuphileni Bible Institute — a community rooted in faith, service, and education. Through the Heritage-Based Education 5.0 model, Mtshabezi prepares students not just for examinations, but for life — blending academic rigour with entrepreneurship, innovation, and real-world skills.
                 </p>
               </div>
               <Link to="/about" className="inline-flex items-center gap-3 text-sm font-bold tracking-widest text-brand-primary uppercase mt-4 group">
@@ -375,7 +377,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto relative z-10">
           <FadeIn>
             <h2 className="text-4xl md:text-6xl font-display font-bold mb-10 leading-tight text-white">
-              A <span className="italic serif font-light text-brand-accent">Legacy</span> of Academic Distinction Since 1904.
+              A <span className="italic serif font-light text-brand-accent">Legacy</span> of Academic Distinction Since 1906.
             </h2>
             <p className="text-xl md:text-2xl text-white/60 mb-12">
               Driven by our Christian values and rooted in the Brethren in Christ Church, we are committed to nurturing the next generation of resilient, innovative leaders in Matabeleland South and beyond.

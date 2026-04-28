@@ -122,11 +122,12 @@ export default function Layout({ children }: LayoutProps) {
         </div>
       </div>
 
+      {/* Skip to content — accessibility link for keyboard users */}
+      <a href="#main-content" className="skip-to-content">Skip to content</a>
+
       {/* Header */}
       <header 
-        className={`sticky top-0 transition-all duration-300 ${
-          isMenuOpen ? "z-[70] bg-brand-primary" : "z-50 bg-white"
-        } ${
+        className={`sticky top-0 z-50 transition-all duration-300 bg-white ${
           isScrolled ? "shadow-md py-3" : "py-5"
         } ${
           navHidden && !isMenuOpen ? "-translate-y-full" : "translate-y-0"
@@ -134,12 +135,12 @@ export default function Layout({ children }: LayoutProps) {
       >
         <nav className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className={`w-10 h-10 flex items-center justify-center font-display font-bold text-xl group-hover:scale-105 transition-all ${isMenuOpen ? 'bg-white text-brand-primary' : 'bg-brand-primary text-white'}`}>
+            <div className="w-10 h-10 bg-brand-primary flex items-center justify-center text-white font-display font-bold text-xl group-hover:scale-105 transition-transform">
               M
             </div>
             <div>
-              <h1 className={`text-lg md:text-xl font-display font-bold leading-none transition-colors ${isMenuOpen ? 'text-white' : 'text-brand-primary'}`}>MTSHABEZI</h1>
-              <p className={`text-[10px] uppercase tracking-[0.2em] font-medium transition-colors ${isMenuOpen ? 'text-brand-accent' : 'text-brand-secondary'}`}>High School</p>
+              <h1 className="text-lg md:text-xl font-display font-bold leading-none text-brand-primary">MTSHABEZI</h1>
+              <p className="text-[10px] uppercase tracking-[0.2em] text-brand-secondary font-medium">High School</p>
             </div>
           </Link>
 
@@ -225,7 +226,7 @@ export default function Layout({ children }: LayoutProps) {
 
           {/* Mobile Menu Button */}
           <button 
-            className={`lg:hidden p-2 focus:outline-none transition-colors ${isMenuOpen ? 'text-white' : 'text-brand-primary'}`}
+            className="lg:hidden text-brand-primary p-2 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -241,9 +242,29 @@ export default function Layout({ children }: LayoutProps) {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[60] bg-brand-primary text-white pt-24 px-8 lg:hidden overflow-y-auto"
+            className="fixed inset-0 z-[80] bg-brand-primary text-white lg:hidden overflow-y-auto"
           >
-            <ul className="flex flex-col gap-6 text-2xl font-display font-light pb-12">
+            {/* Overlay Header — self-contained logo + close button */}
+            <div className={`px-4 flex justify-between items-center ${isScrolled ? 'py-3' : 'py-5'}`}>
+              <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center gap-3 group">
+                <div className="w-10 h-10 bg-white text-brand-primary flex items-center justify-center font-display font-bold text-xl">
+                  M
+                </div>
+                <div>
+                  <h1 className="text-lg md:text-xl font-display font-bold leading-none text-white">MTSHABEZI</h1>
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-brand-accent font-medium">High School</p>
+                </div>
+              </Link>
+              <button
+                className="p-2 text-white focus:outline-none"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <X size={28} />
+              </button>
+            </div>
+
+            {/* Nav Links */}
+            <ul className="flex flex-col gap-6 text-2xl font-display font-light px-8 pt-8 pb-12">
               {navLinks.map((link, idx) => (
                 <motion.li 
                   key={link.name}
@@ -300,7 +321,7 @@ export default function Layout({ children }: LayoutProps) {
         )}
       </AnimatePresence>
 
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
         {children}
       </main>
 
@@ -335,7 +356,7 @@ export default function Layout({ children }: LayoutProps) {
               </div>
             </div>
             <p className="text-white/60 text-base leading-relaxed">
-              A Brethren in Christ Church institution committed to shaping future leaders through academic excellence, faith, and innovation since 1904.
+              A Brethren in Christ Church institution committed to shaping future leaders through academic excellence, faith, and innovation since 1906.
             </p>
             <div className="flex gap-4">
               <div className="w-12 h-12 border border-white/10 flex items-center justify-center hover:bg-brand-secondary transition-all cursor-pointer">
@@ -378,6 +399,12 @@ export default function Layout({ children }: LayoutProps) {
               <li className="flex gap-4">
                 <Mail className="text-brand-accent shrink-0" size={20} />
                 <span>mtshabezihighschool@gmail.com</span>
+              </li>
+              <li className="flex gap-4">
+                <a href="https://wa.me/263782792457" target="_blank" rel="noreferrer" className="flex gap-4 hover:text-white transition-colors">
+                  <Phone className="text-green-400 shrink-0" size={20} />
+                  <span>WhatsApp Us</span>
+                </a>
               </li>
             </ul>
           </div>

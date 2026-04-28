@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import FadeIn from "../components/layout/FadeIn";
 import AnimatedCounter from "../components/AnimatedCounter";
+import SEO from "../components/SEO";
 
 export default function About() {
   const heroRef = useRef(null);
@@ -38,6 +39,7 @@ export default function About() {
 
   return (
     <div className="bg-brand-bg overflow-hidden">
+      <SEO title="Our Story — Mtshabezi High School" description="Founded in 1906, Mtshabezi is a Brethren in Christ Church boarding institution in Gwanda, shaping leaders through Heritage-Based Education 5.0 in Matabeleland South." />
       {/* Page Header with Parallax */}
       <section ref={heroRef} className="relative h-[70vh] flex items-center justify-center bg-brand-primary text-white overflow-hidden">
         <motion.div 
@@ -52,7 +54,7 @@ export default function About() {
               </h1>
               <div className="h-1.5 bg-brand-accent mx-auto mb-8 w-24"></div>
               <p className="max-w-2xl mx-auto text-xl md:text-2xl text-white/70 leading-relaxed">
-                Built on a foundation of faith, integrity, and unwavering commitment to quality education since 1904.
+                Built on a foundation of faith, integrity, and unwavering commitment to quality education since 1906.
               </p>
             </FadeIn>
           </motion.div>
@@ -65,18 +67,21 @@ export default function About() {
           <div className="space-y-10">
             <FadeIn>
               <div className="inline-block px-4 py-2 border border-brand-secondary text-xs uppercase tracking-[0.3em] font-bold text-brand-secondary mb-6">
-                Established 1904
+                Established 1906
               </div>
               <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1] mb-8">A Century of Shaping <span className="text-brand-secondary italic serif font-light">Destinies</span> in Matabeleland.</h2>
               <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
                 <p>
-                  Situated in the heart of Gwanda, Matabeleland South, Mtshabezi High School is a co-educational boarding institution proudly operated under the Brethren in Christ Church. What began as a modest mission school has grown into one of Zimbabwe's most respected centres of learning, consistently producing exceptional scholars and well-rounded citizens.
+                  Founded in 1906 by Rev. Harvey J. Frey and Mrs. Emma Frey — missionaries who transferred from the nearby Matopo Mission — Mtshabezi began as the second Brethren in Christ Church station in southern Rhodesia. Established on a 6,000-acre farm along the Mtshabezi River in the Gwanda District, the mission was born from requests by local pupils eager for an outpost dedicated to evangelism and education.
                 </p>
                 <p>
-                  The school forms part of a broader Mtshabezi Mission campus — a community that also encompasses a hospital, a primary school, and a Bible school. This unique setting creates an environment where education, faith, healthcare, and community service coexist, instilling in students a deep appreciation for service and social responsibility.
+                  By 1908, a brick church and a girls' boarding school had been completed — the latter providing refuge and education for young women at a time when few such opportunities existed. From these humble beginnings, Mtshabezi grew into one of Zimbabwe's most respected centres of learning, consistently producing exceptional scholars and well-rounded citizens across more than a century of unbroken service.
                 </p>
                 <p>
-                  Over the decades, Mtshabezi has earned its reputation through an unwavering commitment to academic rigour, moral discipline, and practical skills development. The school's alumni network spans continents, a testament to the enduring quality of a Mtshabezi education.
+                  The school sits within the broader Mtshabezi Mission campus — a community that today includes a hospital (established 1951), a primary school, and the Ekuphileni Bible Institute (relocated to campus in 1968, meaning "where there is life"). This unique setting, where education, faith, healthcare, and community service coexist, instils in students a deep appreciation for service and social responsibility that defines the Mtshabezi character.
+                </p>
+                <p>
+                  When the Brethren in Christ Church in Zimbabwe achieved administrative autonomy from its North American parent body in 1964, Mtshabezi stood as one of the church's proudest achievements — a lasting monument to the belief that disciplined education and moral formation can transform entire communities. Today, the school's alumni network spans continents, a testament to the enduring quality of a Mtshabezi education.
                 </p>
               </div>
             </FadeIn>
@@ -93,7 +98,7 @@ export default function About() {
               <FadeIn delay={0.4}>
                 <div className="p-10 bg-brand-primary text-white border-t-4 border-t-brand-accent">
                   <Users className="text-brand-accent mb-6" size={32} />
-                  <h4 className="font-display font-bold text-xl mb-4 uppercase tracking-wider">Vision</h4>
+                  <h4 className="font-display font-bold text-xl mb-4 uppercase tracking-wider text-white">Vision</h4>
                   <p className="text-sm text-white/60 leading-relaxed">To be recognised as the standard-bearer for heritage-based education in Zimbabwe — a school that produces leaders who are academically excellent, spiritually grounded, and ready for the modern world.</p>
                 </div>
               </FadeIn>
@@ -162,8 +167,8 @@ export default function About() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <div>
-              <div className="text-5xl font-display font-black text-brand-accent mb-2"><AnimatedCounter value="800+" duration={2.5} /></div>
-              <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Pavilion Capacity</div>
+              <div className="text-5xl font-display font-black text-brand-accent mb-2"><AnimatedCounter value="120+" duration={2.5} /></div>
+              <div className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Years of Excellence</div>
             </div>
           </FadeIn>
           <FadeIn delay={0.3}>
@@ -251,6 +256,35 @@ export default function About() {
               </Link>
             </FadeIn>
           </div>
+        </div>
+      </section>
+
+      {/* Find Us — Google Maps */}
+      <section className="py-32 px-4 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <FadeIn>
+            <div className="text-center mb-16 max-w-2xl mx-auto">
+              <h2 className="text-xs uppercase tracking-[0.4em] font-bold text-brand-secondary mb-6">Location</h2>
+              <h3 className="text-4xl md:text-5xl font-display font-bold leading-tight">Find <span className="italic font-light text-brand-secondary">Us</span></h3>
+              <p className="text-lg text-gray-500 leading-relaxed mt-6">
+                Mtshabezi Mission, Gwanda District, Matabeleland South Province, Zimbabwe. Approximately 75 km south of Bulawayo along the Mtshabezi River.
+              </p>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.2}>
+            <div className="aspect-[16/7] w-full border-8 border-brand-bg shadow-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.95!2d28.8874246!3d-20.7123646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eca884082a286a5%3A0x5c9928323c094abd!2sMtshabezi%20High%20School!5e0!3m2!1sen!2szw!4v1700000000000!5m2!1sen!2szw"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Mtshabezi High School location on Google Maps"
+              />
+            </div>
+          </FadeIn>
         </div>
       </section>
     </div>

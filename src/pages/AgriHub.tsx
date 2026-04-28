@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import { Sprout, ShoppingCart, Info, TrendingUp, DollarSign, Wallet } from "lucide-react";
 import FadeIn from "../components/layout/FadeIn";
+import SEO from "../components/SEO";
 
 export default function AgriHub() {
   const heroRef = useRef(null);
@@ -57,6 +58,7 @@ export default function AgriHub() {
 
   return (
     <div className="bg-white min-h-screen overflow-hidden">
+      <SEO title="Agri-Hub — Mtshabezi High School" description="Student-run agricultural projects: poultry, horticulture, and drip irrigation. Order fresh produce from Mtshabezi High School, Gwanda." />
       {/* Header Section with Parallax */}
       <section ref={heroRef} className="bg-brand-primary text-white h-[70vh] flex items-center px-4 overflow-hidden relative">
         <motion.div 
@@ -161,9 +163,15 @@ export default function AgriHub() {
                       <span className="text-3xl font-black text-brand-primary">{formatPrice(product.priceUSD)}</span>
                       <span className="text-[10px] uppercase tracking-widest text-gray-400 block font-bold mt-1">{product.unit}</span>
                     </div>
-                    <button className="h-14 w-14 bg-brand-primary text-white flex items-center justify-center hover:bg-brand-secondary hover:shadow-xl transition-all">
+                    <a
+                      href={`https://wa.me/263782792457?text=${encodeURIComponent(`Hi, I'd like to order ${product.name} (${product.unit}) at ${formatPrice(product.priceUSD)}. Please confirm availability.`)}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="h-14 w-14 bg-brand-primary text-white flex items-center justify-center hover:bg-brand-secondary hover:shadow-xl transition-all"
+                      aria-label={`Order ${product.name} via WhatsApp`}
+                    >
                       <ShoppingCart size={24} />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

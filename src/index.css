@@ -46,6 +46,65 @@
   .rounded-[60px] {
     border-radius: 0 !important;
   }
+
+  /* Premium hover — brief pause then ease-out */
+  a:hover,
+  button:hover {
+    transition-delay: 60ms;
+    transition-timing-function: ease-out;
+  }
+
+  /* Cards & interactive surfaces — pause then ease-out */
+  [class*="hover:shadow"],
+  [class*="hover:bg-"],
+  [class*="hover:text-"] {
+    transition-timing-function: ease-out;
+    transition-delay: 50ms;
+  }
+
+  /* Arrow/icon nudges on hover — brief pause then ease-out */
+  [class*="group-hover:translate-x"] {
+    transition-timing-function: ease-out;
+    transition-delay: 80ms;
+  }
+
+  /* ===== ACCESSIBILITY ===== */
+
+  /* Focus-visible ring — only shows for keyboard navigation, not mouse clicks */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-brand-secondary);
+    outline-offset: 2px;
+  }
+
+  /* Skip-to-content link — hidden until focused via Tab */
+  .skip-to-content {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    background: var(--color-brand-primary);
+    color: white;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    transition: top 0.2s ease;
+  }
+  .skip-to-content:focus {
+    top: 12px;
+  }
+
+  /* Improve text contrast over gradient overlays */
+  .bg-gradient-to-t .text-white,
+  .bg-gradient-to-r .text-white {
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
 }
 
 @layer utilities {
