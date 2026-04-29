@@ -1,4 +1,3 @@
-// Triggering fresh deployment to GitHub Actions
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
